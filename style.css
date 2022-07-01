@@ -235,6 +235,8 @@ section a:hover {
   color :black;
   opacity: .8;
 }
+  .ccolor:hover{
+    color : white}
 
 #img-mech{
   position: absolute;margin-top: -10vh;
