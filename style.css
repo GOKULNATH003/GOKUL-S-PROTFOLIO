@@ -272,6 +272,28 @@ section a:hover {
   font-size: 2vw;
 }
 
+.cert-txt{
+  color:aliceblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5vw;
+  position: absolute;
+  margin-top: -22vh;
+  width: 60%;
+}
+.cert-btn{
+  text-decoration: none;
+  color: #333;
+  background-color: aliceblue;
+  padding :7px;
+  border-radius: 5px;
+  transition: .3s ease;
+}
+
+.cert-btn:hover{
+  background-color: rgb(194, 191, 191)
+  ;
+  color: aliceblue;
+}
 .btn-2{
 padding: 10px;
 border-radius: 10px;  
@@ -282,13 +304,14 @@ border-radius: 10px;
   ;
   margin-left: 40.7%;
   border: none;
+  transition:.5s ease;
   
 
 }
 
 .btn-2:hover{color: grey;
   background-color: antiquewhite;
-  border: 3px solid black;
+  
 
 }
 .final-content{
