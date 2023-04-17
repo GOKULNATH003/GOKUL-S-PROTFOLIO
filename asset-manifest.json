@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/GOKUL-S-PROTFOLIO/static/css/main.d49e9017.css",
+    "main.js": "/GOKUL-S-PROTFOLIO/static/js/main.4d1bc4d8.js",
+    "static/js/787.1ed0c42c.chunk.js": "/GOKUL-S-PROTFOLIO/static/js/787.1ed0c42c.chunk.js",
+    "static/media/profile.png": "/GOKUL-S-PROTFOLIO/static/media/profile.7eb9b5fa55656caa384c.png",
+    "static/media/Gokulnath_Resume.pdf": "/GOKUL-S-PROTFOLIO/static/media/Gokulnath_Resume.3cb22c9943356b88bb67.pdf",
+    "static/media/instaclone.png": "/GOKUL-S-PROTFOLIO/static/media/instaclone.044bf6e82c8d048d7d26.png",
+    "static/media/carblog.png": "/GOKUL-S-PROTFOLIO/static/media/carblog.4b29795ad6b276a2da21.png",
+    "static/media/experience.png": "/GOKUL-S-PROTFOLIO/static/media/experience.be8e5bfaa7056960eceb.png",
+    "static/media/w3schools.png": "/GOKUL-S-PROTFOLIO/static/media/w3schools.c84b0e6a33cd1a951cc4.png",
+    "static/media/grad.png": "/GOKUL-S-PROTFOLIO/static/media/grad.70a7126ba6ac96d016c0.png",
+    "static/media/planning.png": "/GOKUL-S-PROTFOLIO/static/media/planning.77d099303c6ac8d6da28.png",
+    "static/media/facebookclone.png": "/GOKUL-S-PROTFOLIO/static/media/facebookclone.fd8cde3e62363d26ed9b.png",
+    "index.html": "/GOKUL-S-PROTFOLIO/index.html",
+    "main.d49e9017.css.map": "/GOKUL-S-PROTFOLIO/static/css/main.d49e9017.css.map",
+    "main.4d1bc4d8.js.map": "/GOKUL-S-PROTFOLIO/static/js/main.4d1bc4d8.js.map",
+    "787.1ed0c42c.chunk.js.map": "/GOKUL-S-PROTFOLIO/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d49e9017.css",
+    "static/js/main.4d1bc4d8.js"
+  ]
+}
