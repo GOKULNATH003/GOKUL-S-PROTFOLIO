@@ -3,12 +3,12 @@ import profile from '../../assets/images/profile.png'
 import grad_img from '../../assets/images/grad.png'
 import planning from '../../assets/images/planning.png'
 import experience from '../../assets/images/experience.png'
-import w3schools from '../../assets/images/w3schools.png'
-import Facebook from '../../assets/images/facebookclone.png'
-import insta from '../../assets/images/instaclone.png'
-import cars from '../../assets/images/carblog.png'
-import ProjectCard from '../../Component/projectsCard/ProjectCard'
-import Resume from '../../assets/resume/Gokulnath_Resume.pdf'
+// import w3schools from '../../assets/images/w3schools.png'
+// import Facebook from '../../assets/images/facebookclone.png'
+// import insta from '../../assets/images/instaclone.png'
+// import cars from '../../assets/images/carblog.png'
+// import ProjectCard from '../../Component/projectsCard/ProjectCard'
+import Resume from '../../assets/resume/Gokulnath.pdf'
 import { useState } from 'react'
 import hamBurger from '../../assets/images/hamburger.png'
 import close from '../../assets/images/close.png'
@@ -17,25 +17,25 @@ export default function Home() {
 
     const [pageState, setPageState] = useState(false)
     const [overlay, setOverlay] = useState(false)
-    const cardData = [{
-        img: w3schools,
-        link: "https://gokulnath003.github.io/W3school-landing-page/"
-    }
-        , {
-        img: cars,
-        link: "https://gokulnath003.github.io/craze-on-cars/",
-    }, {
+    // const cardData = [{
+    //     img: w3schools,
+    //     link: "https://gokulnath003.github.io/W3school-landing-page/"
+    // }
+    //     , {
+    //     img: cars,
+    //     link: "https://gokulnath003.github.io/craze-on-cars/",
+    // }, {
 
 
-        img: insta,
-        link: "https://gokulnath003.github.io/Instagram-clone/",
-    }, {
+    //     img: insta,
+    //     link: "https://gokulnath003.github.io/Instagram-clone/",
+    // }, {
 
-        img: Facebook,
-        link: "https://gokulnath003.github.io/Facebook-clone/",
-    }
+    //     img: Facebook,
+    //     link: "https://gokulnath003.github.io/Facebook-clone/",
+    // }
 
-    ]
+    // ]
     return (
         <>
             <div className="Home_container">
@@ -103,22 +103,25 @@ export default function Home() {
                                     <p>
                                         Then I completed the course for Frontend Developement at Besant Technologies in Chennai.
                                     </p>
-                                    <p>
-                                        Joined as React JS developer at <b>ZustPe Payments Private Limited</b>  (Sep 20202 - Apr 2023)
-                                    </p>
+                                    <p>Skills :</p>
+
                                     <ul className='list'>
                                         <li>
-                                            Collaborated with the design team to implement user interface designs using React.
+                                            Analysed the design to implement better user interface
+                                            using React.
                                         </li>
-                                        <li>Worked with the backend team to integrate frontend components with the backend API.</li>
+                                        <li>Integrated frontend components with the backend API.</li>
                                         <li>Implemented new features and enhancements such as payment processing, transaction history, and user authentication, using RESTful APIs.</li>
-                                        <li>Ensured the application’s compatibility with various browsers and devices by performing cross browser testing and optimization.</li>
+                                        <li>Ensured the application’s compatibility with various
+                                            browsers and devices by performing cross browser testing
+                                            and optimization.</li>
                                         <li>Maintained secure code practices.</li>
-                                        <li>Optimized the performance of a React JS application by implementing code splitting and lazy loading</li>
-                                        <li>Developed one of the ecommerce product in zustpe.</li>
-                                        <li>Familiarity with Agile methodologies.</li>
-                                        <li>Analyzed in troubleshooting and debugging issues related to the frontend components.</li>
-                                        <li>Refactored the codebase of a React JS application to improve its scalability and reduce code duplication</li>
+                                        <li>Optimized the performance of a React JS application by
+                                            implementing code splitting and lazy loading.</li>
+                                        <li>Analyzed in troubleshooting and debugging issues related to
+                                            the frontend components.</li>
+                                        <li>Refactored the codebase of a React JS application to
+                                            improve its scalability and reduce code duplication.</li>
                                     </ul>
 
 
@@ -126,7 +129,7 @@ export default function Home() {
                                 <img draggable="false" src={experience} className='bottom_img' alt="graduationcap" />
                             </div>
                         </div>
-                        <div className="personal_projects">
+                        {/* <div className="personal_projects">
                             <p className='text-center fs15 text-white'>My works</p>
                             <div className='d-flex justify-evenly flex-wrap g2'>
                                 {cardData?.map((item, i) => {
@@ -136,7 +139,7 @@ export default function Home() {
                                 })
                                 }
                             </div>
-                        </div>
+                        </div> */}
                         <div className='d-flex justify-center my10'>
                             <a href={Resume} target='_blank' rel='noreferrer'>
                                 <button className='downlod_resume'>
