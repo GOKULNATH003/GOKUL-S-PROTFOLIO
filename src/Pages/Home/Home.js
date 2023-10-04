@@ -17,6 +17,10 @@ import close from "../../assets/images/close.png";
 export default function Home() {
   const [pageState, setPageState] = useState(false);
   const [overlay, setOverlay] = useState(false);
+  const [rotationAngle, setRotationAngle] = useState(0);
+  const [axis,setAXis]=useState("")
+      const [hover,setHover]=useState(false)
+      const name=["G","o","k","u","l","n","a","t","h",","]
   const cardData = [
     {
       img: w3schools,
@@ -40,11 +44,13 @@ export default function Home() {
 //   }
 
   ]
+  console.log(rotationAngle)
   return (
     <>
       <div className="Home_container">
         <div className="homeHeader d-flex justify-end ">
-          <nav className=" d-flex g5 m5 ">
+          <nav className=" d-flex g5  " style={{margin:"50px 0"}}>
+            
             <a
               rel="noreferrer"
               href="https://www.linkedin.com/in/gokulnath-s-b05b9b1ab"
@@ -104,7 +110,17 @@ export default function Home() {
         <div className="topContent d-flex justify-between align-center">
           <div className="topLeftContent">
             <p>Hi there!I'm </p>
-            <h3 className="fs20">Gokulnath,</h3>
+            <h3 className="fs20">{
+name.map((item,i)=>{
+  
+ return <Spantag onMouseEnter={()=>{}} name={i} text={item}/>
+
+
+ 
+})
+            }
+          
+            </h3>
             <h3 className="fs20">A Frontend Developer</h3>
             <h3 className="fs20">Vellore,Tamilnadu,India</h3>
             <p>
@@ -119,7 +135,30 @@ export default function Home() {
                 draggable="false"
                 src={profile}
                 className="profile_img"
+                style={{transform: `rotate(${rotationAngle}deg)`}}
                 alt=""
+                onMouseEnter={()=>{
+                  setHover(true)
+                }}
+                onMouseLeave={()=>{
+                  setHover(false)
+                  // setRandomNumber(0);
+                  setRotationAngle(0)
+
+                }}
+                onMouseMove={(event)=>{
+                  console.log("working")
+                  const { clientX, clientY } = event;
+                  const centerX = window.innerWidth / 2;
+                  const centerY = window.innerHeight / 2;
+              console.log(clientX,clientY)
+                  // Calculate the angle between the cursor position and the center of the screen
+                  const radians = Math.atan2(clientY - centerY, clientX - centerX);
+                  const degrees = radians * (180 / Math.PI);
+              
+                  // Update the rotation angle
+                  setRotationAngle(degrees);
+                }}
               />
             </div>
           </div>
@@ -304,3 +343,9 @@ const Overlay = ({ setOverlay }) => {
     </div>
   );
 };
+
+const Spantag=(prop)=>{
+  return(
+    <span className={`itag${prop.name} itags`}>{prop.text}</span>
+  )
+}

@@ -6,6 +6,10 @@
   border-radius: 50%;
   overflow: hidden;
   display: flex;
+  transition: .3s;
+}
+.img_displayer:hover{
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.6);
 }
 nav a {
   text-decoration: none;
@@ -292,4 +296,64 @@ text-align: justify;
 .grad_details img{
   width: 50vw;
 }
+}
+
+i{
+  transition: .3s;
+  transform: rotateY(180deg);
+}
+i:hover{
+  transform: rotateY(0deg);
+
+}
+/* //create a rotate  */
+.itag0:hover{
+  color: red;
+  display: inline-block;
+  transform: translateY(-10px);
+}.itag1:hover{
+  color: red;
+  display: inline-block;
+  transform: translateY(-10px);
+}.itag2:hover{
+  color: red;
+  display: inline-block;
+  transform: translateY(-10px);
+}.itag3:hover{
+  color: red;
+  display: inline-block;
+  transform: translateY(-10px);
+}.itag5:hover{
+  color: red;
+  display: inline-block;
+  transform: translateY(-10px);
+}
+.itag6:hover{
+  color: red;
+  display: inline-block;
+  transform: translateY(-10px);
+}
+.itag7:hover{
+  color: red;
+  display: inline-block;
+  transform: translateY(-10px);
+}
+.itag8:hover{
+  color: red;
+  display: inline-block;
+  transform: translateY(-10px);
+}
+.itag9:hover{
+  color: red;
+  display: inline-block;
+  transform: translateY(-10px);
+}
+.itag4:hover{
+  color: red;
+  display: inline-block;
+  transform: translateY(-10px);
+}
+.itags{
+  transition: .3s;
+  cursor: pointer;
 }
